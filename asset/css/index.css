@@ -1,7 +1,16 @@
+:root {
+    font-size: 10px;
+    --btn-color: #fefe00;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 a{
@@ -12,15 +21,13 @@ ul,li{
     list-style-type: none;
 }
 
+.text-capitalize{
+    text-transform: capitalize !important;
+}
+
 .header {
     background-color: #ff3b66;
     background-image: linear-gradient(147deg, #ff3b66 0%, #ff258a 74%);
-    padding: 25px;
-}
-
-.topnav .brand {
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 .brand--link{
@@ -28,7 +35,11 @@ ul,li{
     color: #fff;
 }
 
-.topnav>.row{
+.topnav {
+    padding: 25px 0;
+}
+
+.topnav>.grid>.row{
     align-items: center;
 }
 
@@ -41,7 +52,6 @@ ul,li{
 .topnav__user--openmenu{
     padding: 8px 0 8px 16px;
     color: #fff;
-    text-transform: capitalize;
 }
 
 .topnav__user--signup
@@ -50,9 +60,54 @@ ul,li{
     margin-left: 16px;
     border-radius: 5px;
     color: #000;
-    background-color: #fefe00;
-    text-transform: capitalize;
+    background-color: var(--btn-color);
 }
+
+.header__main {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__main--slogan {
+ margin-bottom: 50px;
+}
+
+.header__main--slogan h2 {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.header__main--slogan p {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+.header__main--slogan a {
+    display: inline-block;
+    font-size: 2rem;
+    color: #000;
+    padding: 12px 24px;
+    margin-right:15px;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+}
+
+.slogan__btn a:nth-child(2) {
+    background-color: #fff;
+}
+
+.header__main--img {
+    float: left;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
 
 @media (min-width:740px) {
     .topnav__user .row{
@@ -60,9 +115,28 @@ ul,li{
     }
 }
 
+@media (max-width:740px) {
+    .topnav .brand {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header__main--slogan{
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: justify;
+    }
+}
+
 @media (min-width:1024px) {
     .header {
-        height: 100vh;
+        height: 700px;
+    }
+}
+
+@media (max-width:1024px) {
+    .only-pc{
+        display: none;
     }
 }
 
