@@ -170,6 +170,10 @@ ul,li{
     padding: 15px 0;
  }
 
+ .mentors {
+    padding-bottom: 50px;
+ }
+
  .topics__slider,
  .mentors__slider {
     padding-top: 30px;
