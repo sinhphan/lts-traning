@@ -6,7 +6,6 @@
     --btn-color-hover: #fefe00c2;
     --body-color: #969696
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -156,7 +155,15 @@ ul,li{
 }
 
 .desc {
-    padding: 110px;
+    padding: 110px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__item  a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .main img{
@@ -346,7 +353,6 @@ ul,li{
 
     .desc__wrap{
         width: 1000px;
-        margin: auto;
     }
 }
 
