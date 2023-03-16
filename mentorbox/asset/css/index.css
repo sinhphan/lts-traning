@@ -184,7 +184,17 @@ ul,li{
     position: relative;
  }
 
+ .slider__item img {
+    transition: 0.5s all ease;
+ }
+
+ .slider__item img:hover {
+    font-size: 3.2rem;
+    border-radius: 50%;
+ }
+
  .slider__item p {
+    cursor: pointer;
     position: absolute;
     bottom: 10%;
     left: 0;
