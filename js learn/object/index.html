@@ -55,6 +55,22 @@
       <li>
         <pre>
           <code>
+            var person2 = {}
+            person2.name = 'Sinh'
+            person2.age = 29
+            person2.showInfo = function(){
+              return `tên ${this.name} năm nay ${this.age} tuổi`
+            } 
+            
+            console.log(person2.showInfo()); 
+            // result: tên Sinh năm nay 29 tuổi
+          </code>
+        </pre>
+      </li>
+
+      <li>
+        <pre>
+          <code>
             var person2 = new Object()
             person2.name = 'Sinh'
             person2.age = 29
@@ -68,8 +84,24 @@
         </pre>
       </li>
     </ol>
+
+    <pre>
+      <h3>
+        Chú ý: Khi khởi tạo một object. biến chứa object sẽ không chứa các giá trị của object.
+        Biến này chỉ chứa giá trị là địa chỉ của ô nhớ chứa object đã tạo mà thôi.
+        Do tính chất này nên ta có thể khai báo object bằng từ khóa const
+        mà vẫn có thể chỉnh sửa giá trị các thành phàn trong object.
+      </h3>
+    </pre>
+
+
+
     <script>
-      
+      var a ={a:'a'}
+      var b= a;
+      var c = {a:'a'}
+      console.log(a == b);
+      console.log(a == c);
       
     </script>
 </body>
