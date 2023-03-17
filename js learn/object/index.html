@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+  <style>
+    *{
+      line-height: 1.5;    }
+  </style>
+</head>
+<body>
+  <h2>JS object</h2>
+  <pre>
+    object là một kiểu dữ liệu của javascript.
+    Object có thể lưu trữ tất cả các loại dữ liệu của JS.
+    Object sẽ lưu dữ liệu dưới dạng key : value.
+    Các cách tạo object:
+  </pre>
+    <ol>
+      <li>
+        <pre>
+          <code>
+          var object = {
+            key1 : 'value',
+            key2 : 'value 2'
+          }
+          </code>
+        </pre>
+      </li>
+
+      <li>
+        <pre>
+          <code class='language-javascript'>
+            function person(name,age){
+              this.name = name;
+              this.age = age;
+              this.showInfo = ()=>{
+                return `tên ${this.name} năm nay ${this.age} tuổi`
+              }
+            }
+
+            var person1 = new person('Sinh',29)
+            console.log(person1.showInfo());
+            // result : tên Sinh năm nay 29 tuổi
+          </code>
+        </pre>
+      </li>
+
+      <li>
+        <pre>
+          <code>
+            var person2 = new Object()
+            person2.name = 'Sinh'
+            person2.age = 29
+            person2.showInfo = function(){
+              return `tên ${this.name} năm nay ${this.age} tuổi`
+            } 
+            
+            console.log(person2.showInfo()); 
+            // result: tên Sinh năm nay 29 tuổi
+          </code>
+        </pre>
+      </li>
+    </ol>
+    <script>
+      
+      
+    </script>
+</body>
+
+</html>

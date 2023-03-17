@@ -162,8 +162,7 @@ ul,li{
 
 .slider__item  a{
     display: block;
-    width: 100%;
-    height: 100%;
+    line-height: 0;
 }
 
 .main img{
