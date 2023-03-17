@@ -12,6 +12,9 @@
   <style>
     *{
       line-height: 1.5;    }
+    code,pre {
+      font-family: 'Courier New', Courier, monospace !important;
+    }
   </style>
 </head>
 <body>
@@ -94,15 +97,90 @@
       </h3>
     </pre>
 
+    <pre>
+      <code>
+      const objA ={a:'a'}
+      const objB= objA;
+      objb.a = 'd'
+      
+      var a = 1;
+      var b = a;
+      a =2;
 
+      console.log(objA, objB); // {a:'d'} {a:'d'} 
+      // cả objA và objB giá trị của phần tử trong nó đều bị thay đổi vì 
+          giá trị trong vùng nhớ của nó bị thay đổi
+  
+      console.log(a, b);  // 2 1
+        // false bởi vì giá trị của a và c là 2 địa chỉ khác nhau
+        // giá trị của a thay đổi nhưng b thì ko vì a và b ở 2 vùng nhớ khác nhau
+      </code>
+    </pre>
 
-    <script>
+    <pre>
+      <code>
       var a ={a:'a'}
       var b= a;
       var c = {a:'a'}
-      console.log(a == b);
-      console.log(a == c);
+
+      console.log(a == b); // true 
+        // true bởi vì giá trị của a và b đều là địa chỉ của một ô nhớ
+      console.log(a == c);  // fale
+        // false bởi vì giá trị của a và c là 2 địa chỉ khác nhau
+      </code>
+    </pre>
+
+    <pre>
+      <h3>
+       từ khóa this khi ở cấp cao nhất sẽ trả về đối tượng windown (global object)
+       khi gọi trong 1 function  nó sẽ trả về windown (global object)
+       Khi gọi trong 1 block code nó cũng sẽ trả về windown
+       Nhưng khi ở chế độ strict mode hai trường hợp trên sẽ trả về undefined
+       khi nó được gọi trong 1 object nó sẽ trả về chính object đó
+       khi nó được gọi trong một handleEvent nó sẽ trả về object element của event đó
+
+       trong 2 ví dụ dưới đây với ví dụ thứ 2 nếu sử dụng arrow function sẽ gây ra lỗi 
+       do arrow function không có tham chiếu nên this sẽ trả về windown object,
+       và undefined khi ở strict mode. còn ví dụ 1 có thể sử dụng tất cả các cách khai báo function trong object
       
+       các phương thức bind(), call(), apply() có thể cung cấp đối tượng chỉ định cho this
+       để khi gọi this nó sẽ sử dụng đối tượng đó.
+      </h3>
+    </pre>
+
+   
+      <pre>
+        <code class='language-javascript'>
+          function person(name,age){
+            this.name = name;
+            this.age = age;
+            this.showInfo = ()=>{
+              return `tên ${this.name} năm nay ${this.age} tuổi`
+            }
+          }
+
+          var person1 = new person('Sinh',29)
+          console.log(person1.showInfo());
+          // result : tên Sinh năm nay 29 tuổi
+        </code>
+      </pre>
+
+      <pre>
+        <code>
+          var person2 = {}
+          person2.name = 'Sinh'
+          person2.age = 29
+          person2.showInfo = function(){
+            return `tên ${this.name} năm nay ${this.age} tuổi`
+          } 
+          
+          console.log(person2.showInfo()); 
+          // result: tên Sinh năm nay 29 tuổi
+        </code>
+      </pre>
+
+
+    <script>
     </script>
 </body>
 
