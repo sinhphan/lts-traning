@@ -179,8 +179,44 @@
         </code>
       </pre>
 
+      <pre>
+        <h3>Có bốn cách để hiển thị giá trị của các phần tử trong object</h3>
+        <code>
+          const obj = {
+            key1 : 'a',
+            key2 : 'b',
+            key3 : 'c'
+          }
+
+          // display property by key name
+          console.log(obj.key1) // a
+          console.log(obj['key2']) // b
+          
+          // display property in a loop
+          for(let key in obj){
+            console.log(obj[key]) // a b c
+          }
+
+          // display object using Object.values()
+          const values = Object.values(obj)
+          console.log(values); // ['a','b','c']
+
+          // display object using JSON.stringify()
+          console.log(JSON.stringify(obj)) // {"key1":"a","key2":"b","key3":"c"}
+        </code>
+        <h2>
+          chú ý khi sử dụng JSON.stringify() method sẽ không chuyển function thành string
+        </h2>
+      </pre>
+
 
     <script>
+       const person = {
+          name: "John",
+          age: function () {return 30;}
+        };
+
+        console.log(JSON.stringify(person));
     </script>
 </body>
 
