@@ -209,14 +209,51 @@
         </h2>
       </pre>
 
+      <pre>
+        <h3>Getters và setters cho phép chúng ta định nghĩa các phương thức truy cập vào phần tử của object</h3>
+        <code>
+          const me = {
+            name : 'Sinh',
+            age : 29,
+            set setAge(age) {
+              this.age = age
+            },
+            get getAge() {
+              return this.age
+            },
+            getName : function(){
+              return this.name
+            },
+            setName : function(name){
+              this.name = name
+            }
+            
+          }
+  
+        console.log(me.getAge) // 29
+  
+        me.setAge = 30
+        console.log(me.getAge) // 30
+    
+        console.log(me.getName()) // Sinh
+  
+        me.setName('Toan')
+        console.log(me.getName()) // Toan
+        </code>
+        <h3>setter và getter giúp ta truy cập vào object propertie với cú pháp đơn giản
+          làm cho cú pháp khai báo và sử dụng properties và method giống nhau
+          đảm bảo  chất lượng dữ liệu đầu vào và ra giống như mong muốn
+          nó là tiện dụng cho xử lí logic phía sau
+        </h3>
+      </pre>
+
+
+      <pre>
+        <h3>Object contructor</h3>
+      </pre>
 
     <script>
-       const person = {
-          name: "John",
-          age: function () {return 30;}
-        };
-
-        console.log(JSON.stringify(person));
+      
     </script>
 </body>
 
