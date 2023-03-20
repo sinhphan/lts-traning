@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  font-size: 10px;
+
+  /* variable */
+  /* color  */
+  --red: #cd1818;
+  --black: #000;
+  --black-700: #333;
+  --white: #fff;
+  --gray: #4d4d4d;
+  --gray-2: #6c757d;
+  --product-name-hover: #0168fa;
+  --btn-end-bg: #ef8573;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem; 
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* hover dropdown menu  */
+.hover-dropdown{
+  position: relative;
+  height: 100%;
+}
+
+.hover-dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.dropdown-content {
+  display: none;
+}
