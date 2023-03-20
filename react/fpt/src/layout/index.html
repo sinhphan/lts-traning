@@ -17,26 +17,33 @@
   <div class="header">
     <!-- top-nav  -->
     <div class="top-nav flex js-center">
-      <div class="width flex">
+      <div class="width flex js-between">
+
         <!-- logo  -->
-        <div class="col l-2">
+        <div class="col lx-2 l-2 m-6 c-6 flex">
+            <!-- end menu button on mobile -->
+          <div class="mobile-menu-btn flex ali-center only-mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- menu button on mobile -->
+
           <div class="top-nav-logo">
             <a href="#"></a>
           </div>
         </div>
         <!--end logo  -->
 
-        <!-- search form  -->
-        <div class="col l-5 flex ali-center">
+        <!-- search form pc -->
+        <div class="col lx-5 l-5 m-2 flex ali-center only-pc">
           <div class="top-nav-search flex">
-            <input type="text" name="search" >
+            <input type="text" name="search"  placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </div>
-        <!-- end search form  -->
+        <!-- end search form pc -->
 
-        <!-- link -->
-        <div class="col l-5">
+        <!-- link pc-->
+        <div class="col lx-5 l-5 m-7 only-pc">
           <div class="top-nav-link-wrap flex js-evenly ali-center">
             <div class="hover-dropdown">
               <a class="top-nav-link" href="#">
@@ -49,19 +56,19 @@
                 <li><a href="#">Tin mới</a></li>
               </ul>
             </div>
-            <div class="">
+            <div>
               <a class="top-nav-link" href="#">
                 <p><i class="fa-solid fa-file-invoice-dollar"></i></p>
                 <p>Thanh toán & tiện ích</p>
               </a>
             </div>
-            <div class="">
+            <div>
               <a class="top-nav-link" href="#">
                 <p><i class="fa-solid fa-circle-user"></i></p>
                 <p>Tài khoản của tôi</p>
               </a>
             </div>
-            <div class="">
+            <div>
               <a class="top-nav-link" href="#">
                 <p><i class="fa-solid fa-cart-shopping"></i></p>
                 <p>Giỏ hàng</p>
@@ -69,68 +76,80 @@
             </div>
           </div>
         </div>
-        <!-- end link -->
+        <!-- end link pc-->
 
+        <!-- link mobile  -->
+        <div class="top-nav-link-mb m-6 c-6 flex ali-center js-end only-mobile">
+          <div class="phone">
+            <p>Gọi miễn phí</p>
+            <strong>1800 6601</strong>
+          </div>
+          <div class="shop-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <!-- end link mobile  -->
       </div>
     </div>
     <!-- end top-nav  -->
 
-    <!-- main nav  -->
-    <div class="main-nav flex js-center">
-      <div class="width flex js-between ali-center">
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-mobile"></i> Điện thoại</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
+    <!-- search mobile  -->
+    <div class="search-mobile only-mobile flex js-center">
+      <div class="width">
+        <div class="top-nav-search flex">
+          <input type="text" name="search"  placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-laptop"></i> Lap top</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-mobile"></i> Máy tính bảng</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-brands fa-apple"></i> Apple</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-desktop"></i> Pc - linh kiện</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-rotate-right"></i> Máy cũ giá rẻ</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-house-flag"></i> Hàng gia dụng</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-sim-card"></i> Sim thẻ</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
-        </div>
-        <div class="hover-dropdown main-nav-link-wrap">
-            <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-shield-virus"></i> Khuyến mãi</a>
-            <div class="dropdown-content">
-              <h1>Mot cai gi do</h1>
-            </div>
+      </div>
+    </div>
+    <!-- end search mobile  -->
+
+    <!-- main nav PC -->
+    <div class="main-nav flex js-center only-pc">
+      <div class="width ">
+        <div class="relative flex js-between ali-center">
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-mobile"></i> Điện thoại</a>
+              <div class="dropdown-content width">
+                <h1>Mot cai gi do</h1>
+              </div>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-laptop"></i> Lap top</a>
+              <div class="dropdown-content width">
+                <h1>Mot cai gi do</h1>
+              </div>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-mobile"></i> Máy tính bảng</a>
+              <div class="dropdown-content width">
+                <h1>Mot cai gi do</h1>
+              </div>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-brands fa-apple"></i> Apple</a>
+              <div class="dropdown-content width" >
+                <h1>Mot cai gi do</h1>
+              </div>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-desktop"></i> Pc - linh kiện</a>
+              <ul class="dropdown-content">
+                <li><a href="#">mot cai gi do</a></li>
+              </ul>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-rotate-right"></i> Máy cũ giá rẻ</a>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-house-flag"></i> Hàng gia dụng</a>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-sim-card"></i> Sim thẻ</a>
+          </div>
+          <div class="hover-dropdown main-nav-link-wrap">
+              <a href="#" class="main-nav-link h-100"><i class="fa-solid fa-shield-virus"></i> Khuyến mãi</a>
+          </div>
         </div>
       </div>
     </div>
@@ -152,5 +171,7 @@
   </div>
   <!-- end main  -->
 
+  <script>
+  </script>
 </body>
 </html>

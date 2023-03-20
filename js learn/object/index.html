@@ -249,8 +249,105 @@
 
 
       <pre>
-        <h3>Object contructor</h3>
+        <h3>Object contructor tạo ra một object làm khung mẫu cho object mới, 
+          khi khai báo bằng từ khóa new sẽ tạo ra một object chứa các properties của contructor
+          Tên của contruct sẽ đc bắt đầu bằng chữ cái in 
+        </h3>
+        <code>
+          const Student = function(name,age,className){
+            this.name = name
+            this.className = className 
+            this.age = age 
+            this.getName = ()=> this.name
+            this.setName = ()=> this.age 
+          }
+
+          const sinh = new Student('Sinh','29','lA')
+          console.log(sinh) // Student {name: 'Sinh', class: 'lA', age: '29', getName: ƒ, setName: ƒ}
+          console.log(sinh.getName()) //  Sinh
+
+          sinh.gender = "Nam"
+          console.log(sinh.gender)    // Nam  
+
+          sinh.getClassName = function(){
+            return this.className
+          }
+          console.log(sinh.getClassName()) // LA
+
+          Person.gender = "Nam"  // error Không thể thêm property vào contructor 
+          console.log(sinh.gender) 
+
+          Person.getClassName = function(){
+            return this.className
+          }
+          console.log(sinh.getClassName()) // error Không thể thêm method vào contructor
+          
+        </code>
+        <h3>
+          không thể sử dụng arrow function vì arraow function ko có context nên this sẽ tham chiếu đến Global
+          ở trong contructor thì có thể sử dụng arrow function
+        </h3>
       </pre>
+
+      <pre>
+        <h3>
+          Để có thể thêm property hoặc method vào contructor để tất cả các object kế thừa từ contructor
+          có thể sử dụng. Chúng ta sẽ sử dụng prototype.
+        </h3>
+        <code>
+          const Student = function(name,age,className){
+            this.name = name
+            this.className = className 
+            this.age = age 
+            this.getName = ()=> this.name
+            this.setName = ()=> this.age 
+          }
+
+          Student.prototype.gender = 'nam'
+          const sinh = new Student("Sinh",29,'LA')
+          console.log(sinh.gender) // nam
+
+          Student.prototype.getGender = function(){ return this.gender}
+          console.log(sinh.getGender()) // nam
+        </code>
+      </pre>
+
+      <pre>
+        <h3> a javascript Sets is collections of unique value(Các giá trị duy nhất)
+            A Set can hold any value of any data type
+            Set is a object
+        </h3>
+        <code>
+          const letters = new Set(['a','b'])
+          console.log(letters) // Set(2) {'a', 'b'}
+
+          letters.add('c') // add a value to set
+          console.log(letters) // Set(3) {'a', 'b','c'}
+
+          letters.add('c') // many element equal only first element add to letters 
+          letters.add('c')
+          letters.add('c')
+          console.log(letters) // Set(3) {'a', 'b','c'} 
+
+          letters.forEach((value)=>console.log(value)) // a b c
+          // forEach method loop all element of Set
+
+          console.log(letters.values()) // values() method return iterator object containing values of Set
+          console.log(letters.keys()) // keys() method return iterator object containing keys of Set
+
+          typeof letters // return object
+          letters instanceof Set  // return true
+
+          letters.delete('a')  // delete a
+          letters.has('b')  // check value exists in Set
+          letters.clear() // delete all element of Set
+          letters.entries() // return iterator pair [value,value] of Set
+          letters.size // return size of Set
+        </code>
+        <h3>
+          check object is set use instanceof Set
+        </h3>
+      </pre>  
 
     <script>
       
