@@ -216,3 +216,21 @@
   left: 0;
   z-index: 3;
 }
+
+
+.custom-menu {
+  padding: 8px ;
+  border-right: 1px solid var(--gray-2);
+  height: 100%;
+}
+
+.custom-menu h3 {
+  color: var(--gray);
+  padding: 8px 16px 8px 0;
+}
+
+.custom-menu a {
+  display: block;
+  padding: 8px 16px 8px 0;
+  color: var(--gray-2)
+}
