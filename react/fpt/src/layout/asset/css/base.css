@@ -13,6 +13,9 @@
   --gray-2: #6c757d;
   --product-name-hover: #0168fa;
   --btn-end-bg: #ef8573;
+  
+  /* image background:  */
+  --logo: url('../img/iconhd.png');
 }
 
 * {
@@ -37,6 +40,7 @@ li {
 /* hover dropdown menu  */
 .hover-dropdown{
   height: 100%;
+  position: relative;
 }
 
 .hover-dropdown:hover .dropdown-content {
