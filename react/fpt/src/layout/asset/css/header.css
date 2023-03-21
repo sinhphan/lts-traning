@@ -14,7 +14,6 @@
 .top-nav-logo {
   width: 157px;
   background: var(--logo) no-repeat;
-  background-position: top 0 left 0;
 }
 
 .mobile-menu-btn {
@@ -104,9 +103,6 @@
   height: 36px;
 }
 
-.main-nav .hover-dropdown:hover {
-  position: unset;
-}
 
 .main-nav-link-wrap>a{
   color: var(--white);
@@ -125,6 +121,7 @@
 }
 
 .mobile-blur {
+  display: none;
   position: fixed;
   top : 0;
   right: 0;
