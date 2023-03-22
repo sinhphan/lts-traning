@@ -27,6 +27,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem; 
+  background-color: #f8f9fa;
 }
 
 a {
@@ -39,6 +40,8 @@ li {
 
 .hover-dropdown {
   position: relative;
+  transition: 0.4s all ease;
+  transition-delay: 0.2s;
 }
 
 .hover-dropdown:hover .dropdown-content {

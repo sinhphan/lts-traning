@@ -224,6 +224,10 @@
   height: 100%;
 }
 
+.last-custom-menu {
+  border: none;
+}
+
 .custom-menu h3 {
   color: var(--gray);
   padding: 8px 16px 8px 0;
@@ -233,4 +237,89 @@
   display: block;
   padding: 8px 16px 8px 0;
   color: var(--gray-2)
+}
+
+.custom-menu a:hover {
+  color: var(--black);
+}
+
+
+.custom-menu .product-img {
+  padding: 8px 8px 8px 0;
+}
+
+.custom-menu .product-desc {
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+.custom-menu .product-desc span {
+  color: var(--red);
+}
+
+.custom-menu .product-sale  img{
+ height: 248px;
+}
+
+.breadcrum {
+  line-height: 37px;
+}
+
+/* .breadcrum li {
+  padding: 0 10px;
+} */
+
+.breadcrum li::after {
+  content: "/";
+  color: var(--gray-2);
+  font-size: 1.8rem;
+  padding: 0 7px;
+}
+
+.breadcrum li:last-child::after{
+  content: '';
+}
+
+/* .breadcrum li:first-child {
+  padding-left : 0;
+} */
+
+.breadcrum a {
+  position: relative;
+  color: var(--product-name-hover);
+}
+
+.breadcrum a:hover {
+  color: var(--black);
+}
+
+.breadcrum a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: -3px;
+}
+
+.breadcrum a:hover::before {
+  animation-name: decoration ;
+  animation-duration: 0.5s;
+  border: 1px solid var(--black);
+  width: 100%;
+}
+
+.breadcrum a.current {
+  color: var(--gray-2);
+  cursor: default;
+  pointer-events: none;
+}
+
+@keyframes decoration {
+  from {
+    width: 0;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
 }
