@@ -11,6 +11,7 @@
   --white: #fff;
   --gray: #4d4d4d;
   --gray-2: #6c757d;
+  --gray-3: #c2c2c2;
   --product-name-hover: #0168fa;
   --btn-end-bg: #ef8573;
   
@@ -71,4 +72,8 @@ li {
 
 .dropdown-content.ddtype-list a:hover{
   color: var(--black);
+}
+
+.main-content {
+  padding: 20px 0;
 }

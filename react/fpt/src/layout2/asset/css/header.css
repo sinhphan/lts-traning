@@ -9,6 +9,9 @@
   background: var(--logo) no-repeat;
 }
 
+.search-form-pc {
+  padding: 10px;
+}
 
 .search-form-pc input {
   flex-grow: 11;
@@ -106,7 +109,8 @@
 }
 
 
-.sidebar-mobile  {
+.sidebar-mobile,
+.mobile-filter-fixed  {
   position: fixed;
   top: 0;
   left: 0;
@@ -114,25 +118,26 @@
   bottom: 0;
   background-color: #0000004e;
   overflow-y: scroll ;
+  z-index: 10;
 }
 
-.sidebar-mobile .sidebar-wrap {
+.sidebar-wrap {
   width: 330px;
   height: 100vh;
   background-color: var(--white);
 }
 
-.sidebar-mobile .sidebar-header {
+.sidebar-header {
   background-color: var(--red);
 }
 
-.sidebar-mobile .sidebar-header i {
+.sidebar-header i {
   padding: 16px;
   font-size: 2.2rem;
   color: #fff;
 }
 
-.sidebar-mobile .sidebar-header .header-logo {
+.sidebar-header .header-logo {
   margin-left:10px;
 }
 

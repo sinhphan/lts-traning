@@ -1,6 +1,7 @@
 :root {
   /* responsive  */
   --w-1: 8.33333%;
+  --w-1-5: 20%;
   --w-2: 16.66667%;
   --w-3: 25%;
   --w-4: 33.33333%;
@@ -28,6 +29,11 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .grid {
@@ -68,6 +74,10 @@
 
 .c-1 {
   width: var(--w-1);
+}
+
+.c-1-5 {
+  width: var(--w-1-5);
 }
 
 .c-2 {
@@ -126,6 +136,10 @@
   
   .m-1 {
     width: var(--w-1);
+  }
+
+  .m-1-5 {
+    width: var(--w-1-5);
   }
   
   .m-2 {
@@ -187,6 +201,10 @@
   .l-1 {
     width: var(--w-1);
   }
+
+  .l-1-5 {
+    width: var(--w-1-5);
+  }
   
   .l-2 {
     width: var(--w-2);
@@ -245,6 +263,10 @@
   .lx-1 {
     width: var(--w-1);
   }
+
+  .lx-1-5 {
+    width: var(--w-1-5);
+  }
   
   .lx-2 {
     width: var(--w-2);
@@ -299,6 +321,10 @@
 
   .top-nav {
     padding-bottom: 10px;
+  }
+
+  .breadcrum {
+    padding-left: 10px;
   }
 }
 
