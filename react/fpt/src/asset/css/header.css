@@ -6,7 +6,7 @@
 .header-logo {
   width: 157px;
   height: 56px;
-  background: var(--logo) no-repeat;
+  background: no-repeat;
 }
 
 .search-form-pc {
@@ -57,7 +57,7 @@
  font-size: 2.4rem;
 }
 
-.top-nav-link-mobile {
+.top-nav-link-mobile a{
   color: var(--white)
 }
 
@@ -156,6 +156,7 @@
 
 .sidebar-mobile .sidebar-content a i{
   font-size: 2.4rem;
+  padding-right: 10px;
 }
 
 .sidebar-content-group {
