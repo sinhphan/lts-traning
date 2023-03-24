@@ -1,6 +1,7 @@
 const SUB_NAVIGATIONS = [
   {
     id: 1,
+    parentId:1,
     childrens: [
       {
         id: 1,
@@ -170,33 +171,15 @@ const SUB_NAVIGATIONS = [
         listLink:[
           {
             id: 1,
-            text: 'Dưới 2 triệu',
+            text: 'Samsung Galaxy A14 4G',
             link: '#',
-            image: '',
+            image: 'https://images.fpt.shop/unsafe/fit-in/80x80/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/3/3/638134385008402132_samsung-galaxy-a14-4g-dd-moi.jpg',
           },
           {
             id: 2,
-            text: 'Từ 2 - 4 triệu',
+            text: 'OPPO A57 4GB-128GB',
             link: '#',
-            image: '',
-          },
-          {
-            id: 3,
-            text: 'Từ 4 - 7 triệu',
-            link: '#',
-            image: '',
-          },
-          {
-            id: 4,
-            text: 'Từ 7 - 13 triệu',
-            link: '#',
-            image: '',
-          },
-          {
-            id: 5,
-            text: 'Trên 13 triệu',
-            link: '#',
-            image: '',
+            image: 'https://images.fpt.shop/unsafe/fit-in/80x80/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/20/638071500758726769_oppo-a57-dd.jpg',
           },
         ]
       },
