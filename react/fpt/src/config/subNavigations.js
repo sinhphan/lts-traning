@@ -7,6 +7,7 @@ const SUB_NAVIGATIONS = [
         category: "Hãng sản xuất",
         order: 1,
         displayCollumn: 1,
+        mobileDisplay: true,
         listLink: [
           {
             id: 1,
@@ -69,6 +70,7 @@ const SUB_NAVIGATIONS = [
         category: "Đồng hồ thông minh",
         order: 2,
         displayCollumn: 1,
+        mobileDisplay: false,
         listLink:[
           {
             id: 1,
@@ -125,6 +127,7 @@ const SUB_NAVIGATIONS = [
         category: "Mức Giá",
         order: 1,
         displayCollumn: 2,
+        mobileDisplay: false,
         listLink:[
           {
             id: 1,
@@ -163,6 +166,7 @@ const SUB_NAVIGATIONS = [
         category: "Bán chạy nhất",
         order: 1,
         displayCollumn: 3,
+        mobileDisplay: false,
         listLink:[
           {
             id: 1,
